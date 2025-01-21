@@ -1,5 +1,6 @@
-package com.carload.javaanimals.domain;
+package com.carload.javaanimals.repositories;
 
+import com.carload.javaanimals.domain.Animal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
