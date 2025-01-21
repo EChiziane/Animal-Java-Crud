@@ -1,5 +1,6 @@
-package com.carload.javaanimals.domain;
+package com.carload.javaanimals.controller;
 
+import com.carload.javaanimals.domain.Animal;
 import com.carload.javaanimals.services.AnimalService;
 import org.springframework.web.bind.annotation.*;
 
