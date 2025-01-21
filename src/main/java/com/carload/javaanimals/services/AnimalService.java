@@ -1,5 +1,6 @@
-package com.carload.javaanimals.domain;
+package com.carload.javaanimals.services;
 
+import com.carload.javaanimals.domain.Animal;
 import com.carload.javaanimals.repositories.AnimalRepository;
 import org.springframework.stereotype.Service;
 

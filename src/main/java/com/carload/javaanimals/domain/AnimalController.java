@@ -1,5 +1,6 @@
 package com.carload.javaanimals.domain;
 
+import com.carload.javaanimals.services.AnimalService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
