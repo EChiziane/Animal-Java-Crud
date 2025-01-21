@@ -1,4 +1,4 @@
-package com.carload.javaanimals.domain;
+package com.carload.javaanimals.dtos;
 
 public class AnimalInputDto {
     public String name;

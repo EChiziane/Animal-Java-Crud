@@ -5,14 +5,15 @@ import com.carload.javaanimals.repositories.AnimalRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class AnimalService {
+
     private final AnimalRepository animalRepository;
 
     public AnimalService(AnimalRepository animalRepository) {
-
         this.animalRepository = animalRepository;
     }
 
@@ -20,19 +21,23 @@ public class AnimalService {
         return animalRepository.findAll();
     }
 
-    public Animal getAnimalById(UUID id) {
-        return animalRepository.getReferenceById(id);
+    public Optional<Animal> getAnimalById(UUID id) {
+        return animalRepository.findById(id);
     }
 
-    public void addAnimal(Animal animal) {
-        animalRepository.save(animal);
+    public Animal addAnimal(Animal animal) {
+        return animalRepository.save(animal);
     }
 
-    public void updateAnimal(Animal animal) {
-        animalRepository.save(animal);
+    public Animal updateAnimal(Animal animal) {
+        return animalRepository.save(animal);
     }
 
     public void deleteAnimal(UUID id) {
         animalRepository.deleteById(id);
+    }
+
+    public boolean existsById(UUID id) {
+        return animalRepository.existsById(id);
     }
 }
